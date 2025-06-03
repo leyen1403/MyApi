@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyApi.Infranstructure.Data;
 
@@ -11,9 +12,10 @@ using MyApi.Infranstructure.Data;
 namespace MyApi.Infranstructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250603015954_SeedEmployees")]
+    partial class SeedEmployees
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,6 +53,13 @@ namespace MyApi.Infranstructure.Migrations
                             Email = "a@example.com",
                             Name = "Nguyễn Văn A",
                             Phone = "0123456789"
+                        },
+                        new
+                        {
+                            Id = new Guid("b2222222-2222-2222-2222-222222222222"),
+                            Email = "b@example.com",
+                            Name = "Trần Thị B",
+                            Phone = "0987654321"
                         });
                 });
 #pragma warning restore 612, 618

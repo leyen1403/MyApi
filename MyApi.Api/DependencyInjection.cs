@@ -1,5 +1,6 @@
 ﻿using MyApi.Application;
 using MyApi.Infranstructure;
+using MyApi.Core;
 
 namespace MyApi.Api
 {
@@ -8,7 +9,8 @@ namespace MyApi.Api
         public static IServiceCollection AddAppDI(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddApplicationDI()
-                .AddInfranstructureDI(configuration);
+                .AddInfranstructureDI()
+                .AddCoreDI(configuration);
 
             return services;
         }

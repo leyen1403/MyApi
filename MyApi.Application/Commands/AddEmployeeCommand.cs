@@ -19,7 +19,5 @@ namespace MyApi.Application.Commands
         {
             return await employeeRepository.AddEmployeeAsync(request.EmployeeEntity);
         }
-
-
     }
 }
