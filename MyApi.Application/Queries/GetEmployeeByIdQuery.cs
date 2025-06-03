@@ -1,11 +1,6 @@
 ﻿using MediatR;
 using MyApi.Core.Entities;
 using MyApi.Core.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyApi.Application.Queries
 {

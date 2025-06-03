@@ -1,6 +1,6 @@
 ﻿using MyApi.Application;
-using MyApi.Infranstructure;
 using MyApi.Core;
+using MyApi.Infranstructure;
 
 namespace MyApi.Api
 {

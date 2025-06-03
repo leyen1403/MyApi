@@ -1,9 +1,6 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyApi.Application.Commands;
 using MyApi.Application.Queries;
-using MyApi.Core.Entities;
 
 namespace MyApi.Api.Controllers
 {
@@ -18,7 +15,7 @@ namespace MyApi.Api.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("chucvu")]
+        [HttpGet("chucvu123")]
         public async Task<IActionResult> GetAllJsonplaceholder()
         {
             var result = await _mediator.Send(new GetJsonplaceholderDataQuery());
